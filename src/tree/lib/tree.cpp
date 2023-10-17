@@ -1,6 +1,7 @@
 #include<iostream>
-using namespace std;
 #include "./base.cpp"
+#include<vector>
+using namespace std;
 
 class TreeNode {
   private:
@@ -96,9 +97,6 @@ class TreeNode {
     int search(int val) {
       return (this->searchTreeNode(this, val) != NULL);
     }
-    // int *convertTreeToArray(TreeNode *node) {
-    //   return this->array(node);
-    // }
     int getVal() {
       return this->val;
     }

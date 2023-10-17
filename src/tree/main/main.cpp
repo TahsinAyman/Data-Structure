@@ -1,8 +1,9 @@
 #include<iostream>
-using namespace std;
+#include<vector>
 #include "../lib/tree.cpp"
-
+using namespace std;
 int main(void) {
+
   TreeNode *root = TreeNode::createTreeNodeWithLeftAndRight(
       50,
       TreeNode::createTreeNodeWithLeftAndRight(
