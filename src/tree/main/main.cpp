@@ -3,38 +3,38 @@ using namespace std;
 #include "../lib/tree.cpp"
 
 int main(void) {
-  Node *root = Node::createNodeWithLeftAndRight(
+  TreeNode *root = TreeNode::createTreeNodeWithLeftAndRight(
       50,
-      Node::createNodeWithLeftAndRight(
+      TreeNode::createTreeNodeWithLeftAndRight(
         30,
-        Node::createNodeWithLeftAndRight(
+        TreeNode::createTreeNodeWithLeftAndRight(
           20,
-          Node::createNode(10),
-          Node::createNodeWithRight(25, NULL)
+          TreeNode::createTreeNode(10),
+          TreeNode::createTreeNodeWithRight(25, NULL)
         ),
-        Node::createNodeWithLeftAndRight(
+        TreeNode::createTreeNodeWithLeftAndRight(
           40,
-          Node::createNode(35),
-          Node::createNodeWithRight(45, NULL)
+          TreeNode::createTreeNode(35),
+          TreeNode::createTreeNodeWithRight(45, NULL)
         )
       ),
-      Node::createNodeWithLeftAndRight(
+      TreeNode::createTreeNodeWithLeftAndRight(
         70,
-        Node::createNodeWithLeftAndRight(
+        TreeNode::createTreeNodeWithLeftAndRight(
           60,
-          Node::createNode(55),
-          Node::createNodeWithRight(65, NULL)
+          TreeNode::createTreeNode(55),
+          TreeNode::createTreeNodeWithRight(65, NULL)
         ),
-        Node::createNodeWithLeftAndRight(
+        TreeNode::createTreeNodeWithLeftAndRight(
           80,
-          Node::createNode(75),
-          Node::createNodeWithRight(85, NULL)
+          TreeNode::createTreeNode(75),
+          TreeNode::createTreeNodeWithRight(85, NULL)
         )
     )
   );
   cout << root;
   // cout << root->convertTreeToArray()[0];
-  cout << root->getLength();
+  // cout << root->getLength();
   // int val;
   // cout << "Enter the number to search: ";
   // cin >> val;
