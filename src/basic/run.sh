@@ -1,8 +1,8 @@
-if [ -e "./bin/main" ]; then
-  rm ./bin/main
+if [ -e "./bin/main.out" ]; then
+  rm ./bin/main.out
 fi
-g++ ./main/main.cpp -o ./bin/main
+g++ ./main/main.cpp -o ./bin/main.out
 if [ $? -eq 0 ]; then
-  ./bin/main 
+  ./bin/main.out
 fi 
   
